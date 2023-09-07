@@ -1,0 +1,23 @@
+import pandas as pd
+import datetime
+from greykite.framework.templates.autogen.forecast_config import ForecastConfig, MetadataParam, ModelComponentsParam
+from greykite.framework.templates.forecaster import Forecaster
+
+df = pd.read_excel("Germany_(1965 - 2022) Python (1).xlsx")
+df['Year'] = pd.to_datetime(df['Year'], format='%Y')
+
+config = ForecastConfig(
+    metadata_param=MetadataParam(
+        time_col="Year",
+        value_col="Total  Energy Consumption(TJ)",
+        train_end_date=datetime.datetime(2022, 1, 1)
+    ),
+    model_template="SILVERKITE",  
+    forecast_horizon=8,
+    coverage=0.95
+)
+
+forecaster = Forecaster()
+result = forecaster.run_forecast_config(df=df, config=config)
+
+result.forecast.plot()

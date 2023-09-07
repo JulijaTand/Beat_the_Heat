@@ -1,0 +1,33 @@
+import pandas as pd
+df = pd.read_excel('Germany_(1965 - 2022) Python.xlsx')
+df['Solar consumption - TWh'] = df['Solar consumption - TWh'].fillna(0.00)
+df['Wind consumption - TWh'] = df['Wind consumption - TWh'].fillna(0.00)
+df['Year'] = pd.to_datetime(df['Year'], format='%Y')
+import pandas as pd
+import statsmodels.api as sm
+from statsmodels.tsa.arima_model import ARIMA
+from sklearn.metrics import mean_squared_error
+df.index = df['Year']
+train = df.loc[df.index <= '2022']
+test = df.loc[df.index >= '2023']
+train.index= pd.PeriodIndex(train.index, freq='Y')
+train.index
+!pip install sktime -q
+!pip install pmdarima -q
+from sktime.forecasting.arima import AutoARIMA
+arima = AutoARIMA()
+arima.fit(train['Percentage of renewable energy consumed'])
+train_series = train['Percentage of renewable energy consumed']
+arima.summary()
+pred_arima = arima.predict(list(range(1,21)))
+# Upload to BigQuery
+project_id = "beattheheat"
+destination_table = "beattheheat.test.renewable_consumption_prediction"
+pgbq.to_gbq(prediction,
+            destination_table,
+            project_id=project_id,
+            chunksize=None,
+            verbose=False,
+             table_schema=[{'name': 'ts', 'type': 'DATE'},
+                          {'name': 'actual', 'type': 'FLOAT'},
+prediction = prediction.astype({'Percentage of renewable energy consumed':float})

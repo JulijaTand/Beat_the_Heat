@@ -1,5 +1,5 @@
 # Beat_the_Heat
-Our project seeks to explore the feasibility of Germany achieving a renewable energy consumption target by 2030. By applying predictive models and historical data, we aim to provide insights into the country’s progress toward this ambitious sustainability goal
+Our project seeks to explore the feasibility of Germany achieving a energy consumption target by 2030. By applying predictive models and historical data, we aim to provide insights into the country’s progress toward this ambitious sustainability goal
 ## Hypotheses
 
 ▪️ H1: 50% of German states consume renewable energy above the country's share.

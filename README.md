@@ -1,24 +1,130 @@
-# Beat_the_Heat
-Our project seeks to explore the feasibility of Germany achieving its energy consumption targets by 2030. By applying predictive models and historical data, we aim to provide insights into the country’s progress toward this ambitious sustainability goal
-## Hypotheses
+## Renewable Energy in Germany
 
-▪️ H1: 50% of German states consume renewable energy above the country's share.
+Germany has set ambitious energy consumption targets aimed at sustainability by the year 2030. The importance of these targets is 
+accentuated by growing concerns over climate change and the depletion of non-renewable resources.
 
-▪️ H2: The top (renewable consumption) states adopt the same energy scheme.
+The goal of this project is to provide valuable insights into Germany's progress toward achieving these targets. Using datasets, 
+predictive models, and machine learning techniques, we aimed to explore various hypotheses that pertain to energy consumption patterns at both 
+the national and state levels.
 
-▪️ H3: Energy consumption reduced by 30% as of 2030 (compared to 2008).
+## Team: Beat the Heat
+ 
+Constantine Dranganas
+Julija Tand
+Matthew Fultz
+Sara Liern
 
-▪️ H4: 42.5% of energy consumption coming from renewables by 2030
+
+## Project presentation (https://lookerstudio.google.com/reporting/f6c338c0-acc8-4c19-a47f-9e8ec2703ace) 
+​
+
+We formulated four hypotheses to guide our research
+​
+- H1: 50% of German states consume renewable energy above the country's share.
+- H2: The top states in terms of renewable energy consumption adopt the same energy scheme.
+- H3: Energy consumption in Germany will be reduced by 30% as of 2030, compared to levels in 2008.
+- H4: 42.5% of energy consumption in Germany will come from renewable sources by 2030.
 
 ## Datasets
+​
+​We collected data in the following categories:
 
-**Country** 
-- [Renewable energy consumption](https://docs.google.com/spreadsheets/d/1CJnEe6bdqsaH9iIp6H6cpooaeITnq_Qa2hUYJCEzLYg/edit#gid=1799204313)
+- Country-Level Data
 
-**Regional data**
+Historical energy consumption and renewable energy metrics for Germany (1965 - 2022).
+[Renewable energy consumption](https://docs.google.com/spreadsheets/d/1CJnEe6bdqsaH9iIp6H6cpooaeITnq_Qa2hUYJCEzLYg/edit#gid=1799204313)
 
-- Per state: [Time](https://www.lak-energiebilanzen.de/laenderbilanzen/)
-- Per state: [2017-2020](https://www.lak-energiebilanzen.de/eingabe-statisch/?a=e600 )
+- Regional Data
 
-## Our Approach
-We have gathered extensive datasets on energy consumption and renewable energy sources in Germany to accomplish our mission and investigate the hypotheses. We employed data analysis and machine learning techniques to draw meaningful conclusions from the data.
+State-Level Data: Historical renewable energy consumption per German state (1990 - 2020).
+[Time](https://www.lak-energiebilanzen.de/laenderbilanzen/) and [2017-2020](https://www.lak-energiebilanzen.de/eingabe-statisch/?a=e600 )
+
+
+## Our Approach​
+​
+- Data Gathering
+
+To explore our hypotheses, we gathered extensive datasets from reputable sources. These datasets encompass a wide range of metrics on energy 
+consumption and renewable energy use both at the national and state levels in Germany.
+
+- Data Analysis​
+
+We performed comprehensive data analysis to investigate patterns, trends, and relationships within the data. This included using statistical 
+tests, creating visualizations, and examining correlations among variables.
+
+- Machine Learning Models
+
+To predict future trends and assess the feasibility of Germany achieving its 2030 targets, we applied predictive modeling techniques. 
+This involved training various machine learning models such as time-series forecasting and regression analysis. The models were trained 
+and validated using historical data to make reliable predictions about future energy consumption patterns.
+
+
+## Key Findings
+​
+H1: Our analysis revealed that only 6% of German states currently consume renewable energy above the national renewable average (16,29%) 
+of the last decade.
+
+​
+
+​<img width="1026" alt="Screenshot 2023-09-12 at 17 19 23" src="https://github.com/JulijaTand/Beat_the_Heat/assets/91824083/2fd793ac-fefa-4a80-8930-bf1aaeda9b85">
+
+
+
+
+​​
+
+H2: We found considerable differences in the energy schemes adopted by the top German states for renewable consumption (Bayern, 
+Niedersachsen,Baden-Württemberg.​
+ 
+
+​
+
+​
+<img width="913" alt="Screenshot 2023-09-12 at 17 25 14" src="https://github.com/JulijaTand/Beat_the_Heat/assets/91824083/30ecf6a9-35d3-488c-8f48-821f5609ccc8">
+
+
+​
+​
+
+​
+
+H3: On the current energy reduction pace of 0.88%, Germany will only meet its 30% energy reduction target by 2041. Our forecast model suggests a 
+need for a reduction at a pace of 2.01% year over year to meet the target by 2030.
+
+​
+
+​
+
+
+
+<img width="913" alt="Screenshot 2023-09-12 at 17 32 08" src="https://github.com/JulijaTand/Beat_the_Heat/assets/91824083/8a5214db-c372-404f-8a08-43d992236c18">
+
+​
+
+
+
+​
+
+H4: On the current renewable growth pace of 0.22%, Germany will meet the 42.5% EU target by 2041. There is a need of an increase to 
+a pace of 5.19% growth year over year to meet the target by 2030.
+
+​
+
+​
+
+<img width="918" alt="Screenshot 2023-09-12 at 17 35 14" src="https://github.com/JulijaTand/Beat_the_Heat/assets/91824083/e5120c0f-ef9e-4ff2-9fbf-a5f3bd91c6cc">
+
+
+​
+
+​
+
+## Conclusions
+​
+Our analyses offer clear predictions regarding the feasibility of Germany achieving its ambitious 2030 energy goals. 
+The country seems to be far from reducing overall energy consumption and increasing renewable energy use, while there is a clear lack 
+of uniformity at the state level.
+
+
+Policy interventions may be required to encourage more states to adopt successful renewable energy schemes, while the country should exceed 
+its current efforts to achieve its goals.

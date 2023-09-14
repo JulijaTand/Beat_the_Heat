@@ -44,7 +44,7 @@ Historical renewable energy consumption per German state (1990 - 2020) https://w
 
 ## Project Scope & Problem Definition
 
-The scope of this project is to evaluate Germany's progress toward its 2030 energy sustainability goals by analyzing historical data on energy consumption at both the national and state levels. We aim to understand patterns and trends in energy consumption and to predict whether the 2030 targets will be achieved. The specific problems we're trying to solve are:
+The scope of this project is to evaluate Germany's progress toward its 2030 energy sustainability goals by analyzing historical data on energy consumption at both the national and state levels. We aim to understand energy consumption patterns and trends and predict whether the 2030 targets will be achieved. The specific problems we're trying to solve are:
 
   - Assess the renewable energy consumption across German states.
   - Determine if there's uniformity in renewable energy schemes among top-performing states.
@@ -61,7 +61,7 @@ from 1965 to 2022 for country-level data, and 1990 to 2020 for state-level data.
 
 ## Data Transformation & Cleaning
 
-The raw data came in various formats, and some data normalization was required to make it suitable for analysis. 
+The raw data came in various formats, and some data clean-up was required to make it suitable for analysis. 
 
 - We removed any duplicates or irrelevant columns.
 - Merge historical energy data per German state in single CSV files.
@@ -72,16 +72,16 @@ The raw data came in various formats, and some data normalization was required t
 
 Initial descriptive analysis was performed to understand the general trends in the datasets:
 
-Computed summary statistics to get a sense of the distribution and variation of variables.
+Computed summary statistics to understand the distribution and variation of variables.
 Identified outliers and examined their cause and significance.
-Observed seasonal and yearly patterns in renewable energy consumption and overall energy use.
+Observed annual patterns in renewable energy consumption and overall energy use.
 
 
 ## Data Analysis​
 
 Our data analysis primarily involved:
 
-Testing the four hypotheses using statistical methods like hypothesis testing and ANOVA.
+Testing the four hypotheses through forecasting by machine learning with Greykite and ARIMA.
 Exploring relationships between variables using correlation and regression analysis.
 Identifying key drivers of renewable energy adoption and overall energy consumption reduction.
 
@@ -89,7 +89,8 @@ Identifying key drivers of renewable energy adoption and overall energy consumpt
 
 ## Predictive Modelling
 
-To predict future trends and assess the feasibility of Germany achieving its 2030 targets, we applied predictive modeling techniques.This involved training various machine learning models such as time-series forecasting and regression analysis.
+To predict future trends and assess the feasibility of Germany achieving its 2030 targets, we applied predictive modeling techniques. This involved training various machine learning models such as time-series forecasting and regression analysis.
+We tested different predictive models to determine the best model. We used a combination of Silverkite and ARIMA for the final visualization. 
 The models were trained and validated using historical data to make reliable predictions about future energy consumption patterns.
 
 - Energy reduction forecast: https://colab.research.google.com/drive/1ZZugqQRjN3wqO9UfNASmJqxiQ6AwNINH?usp=sharing
@@ -105,12 +106,12 @@ This included using statistical tests, creating visualizations, and examining co
 The visualizations consisted of:
 
 - Time-series graphs to depict historical trends.
-- Bar graphs to show differences in renewable energy shemes among states and renewable energy growth.
+- Bar graphs to show differences in renewable energy schemes among states and renewable energy growth.
 
 
 ## Key Findings
 ​
-H1: Our analysis revealed that only 6% of German states currently consume renewable energy above the national renewable average (16,29%) of the last decade.
+H1: Our analysis revealed that only 6% of German states have a renewable energy consumption which is above the national average for renewable energy consumption (16,29%) of the last decade.
 
 ​
 
@@ -131,7 +132,7 @@ Niedersachsen,Baden-Württemberg.​
 ​
 
 
-H3: On the current energy reduction pace of 0.88%, Germany will only meet its 30% energy reduction target by 2041. Our forecast model suggests a need for a reduction at a pace of 2.01% year over year to meet the target by 2030.
+H3: On the current energy reduction pace of 0.88%, Germany will only meet its 30% energy reduction target by 2041. Our forecast model suggests a need for a reduction at a pace of 2.01% year-on-year to meet the target by 2030.
 
 ​
 
@@ -143,7 +144,7 @@ H3: On the current energy reduction pace of 0.88%, Germany will only meet its 30
 
 
 
-H4: On the current renewable growth pace of 0.22%, Germany will meet the 42.5% EU target by 2041. There is a need of an increase to a pace of 5.19% growth year over year to meet the target by 2030.
+H4: On the current renewable growth pace of 0.22%, Germany will meet the 42.5% EU target by 2041. There is a need for an increase to a pace of 5.19% growth year-on-year to meet the target by 2030.
 
 ​
 
@@ -158,3 +159,5 @@ The country seems to be far from reducing overall energy consumption and increas
 
 
 Policy interventions may be required to encourage more states to adopt successful renewable energy schemes, while the country should exceed its current efforts to achieve its goals.
+
+*Disclaimer - the data used for the analysis and machine learning solely pertains to historical energy consumption data. We were not able to include additional important external factors such as the COVID-19 pandemic or war in the Ukraine into our model. We believe this would be important in order to have a more adaptive and wholistic prediction of energy consumption.

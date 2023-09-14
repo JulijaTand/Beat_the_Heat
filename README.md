@@ -3,7 +3,7 @@
 ![nasa-Q1p7bh3SHj8-unsplash](https://github.com/JulijaTand/Beat_the_Heat/assets/91824083/13988d3c-81db-4d8d-a682-e395dd173bf8)
 
 
-Germany has set ambitious energy consumption targets aimed at sustainability by the year 2030. The importance of these targets is 
+Germany has set ambitious energy consumption targets aimed at sustainability by 2030. The importance of these targets is 
 accentuated by growing concerns over climate change and the depletion of non-renewable resources.
 
 The goal of this project is to provide valuable insights into Germany's progress toward achieving these targets. Using datasets, 

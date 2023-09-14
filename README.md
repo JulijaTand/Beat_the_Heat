@@ -41,22 +41,69 @@ State-Level Data: Historical renewable energy consumption per German state (1990
 
 
 ## Our Approach​
-​
-- Data Gathering
 
-To explore our hypotheses, we gathered extensive datasets from reputable sources. These datasets encompass a wide range of metrics on energy 
-consumption and renewable energy use both at the national and state levels in Germany.
+- Project Scope & Problem Definition
+
+The scope of this project is to evaluate Germany's progress toward its 2030 energy sustainability goals by analyzing historical data on
+energy consumption at both the national and state levels. We aim to understand patterns and trends in energy consumption and to predict 
+whether the 2030 targets will be achieved. The specific problems we're trying to solve are:
+
+  Assess the renewable energy consumption across German states.
+  Determine if there's uniformity in renewable energy schemes among top-performing states.
+  Predict the future course of energy consumption reduction and renewable energy growth in Germany.
+
+
+- Data Collection
+
+To explore our hypotheses, we gathered extensive datasets from reputable sources. 
+These datasets encompass a wide range of metrics on energy consumption and renewable energy use both at the national 
+and state levels in Germany. Data is sourced from official energy statistics databases and comprises historical information 
+from 1965 to 2022 for country-level data, and 1990 to 2020 for state-level data.
+
+
+- Data Transformation & Cleaning
+
+The raw data came in various formats, and some data normalization was required to make it suitable for analysis. We:
+
+Removed any duplicates or irrelevant columns.
+Standardized units across all datasets.
+
+
+- Descriptive Analysis
+
+Initial descriptive analysis was performed to understand the general trends in the datasets:
+
+Computed summary statistics to get a sense of the distribution and variation of variables.
+Identified outliers and examined their cause and significance.
+Observed seasonal and yearly patterns in renewable energy consumption and overall energy use.
+
 
 - Data Analysis​
 
-We performed comprehensive data analysis to investigate patterns, trends, and relationships within the data. This included using statistical 
-tests, creating visualizations, and examining correlations among variables.
+Our data analysis primarily involved:
 
-- Machine Learning Models
+Testing the four hypotheses using statistical methods like hypothesis testing and ANOVA.
+Exploring relationships between variables using correlation and regression analysis.
+Identifying key drivers of renewable energy adoption and overall energy consumption reduction.
 
-To predict future trends and assess the feasibility of Germany achieving its 2030 targets, we applied predictive modeling techniques. 
-This involved training various machine learning models such as time-series forecasting and regression analysis. The models were trained 
-and validated using historical data to make reliable predictions about future energy consumption patterns.
+
+
+- Predictive Modelling
+To predict future trends and assess the feasibility of Germany achieving its 2030 targets, we applied predictive modeling techniques.
+This involved training various machine learning models such as time-series forecasting and regression analysis.
+The models were trained and validated using historical data to make reliable predictions about future energy consumption patterns.
+
+  
+
+- Data Visualization
+
+We performed comprehensive data analysis to investigate patterns, trends, and relationships within the data.
+This included using statistical tests, creating visualizations, and examining correlations among variables. 
+
+The visualizations consisted of:
+
+Time-series graphs to depict historical trends.
+Bar graphs to show differences in renewable energy shemes among states and renewable energy growth.
 
 
 ## Key Findings

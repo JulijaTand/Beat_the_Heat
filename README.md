@@ -31,7 +31,8 @@ We formulated four hypotheses to guide our research
 ## Tools & Languages
 - SQL, Python
 - BigQuery, Google Sheets
-- Greykite, ARIMA
+- Greykite, ARIMA ![image](https://github.com/JulijaTand/Beat_the_Heat/assets/138225190/991357ad-7a01-4f21-a3b4-48c47943ea90)
+
 
 ## Datasets
 ​

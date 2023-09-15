@@ -28,7 +28,7 @@ We formulated four hypotheses to guide our research
 - H3: Energy consumption in Germany will be reduced by 30% as of 2030, compared to levels in 2008.
 - H4: 42.5% of energy consumption in Germany will come from renewable sources by 2030.
 
-## Tools 
+## Tools & Languages
 - SQL, Python
 - BigQuery, Google Sheets
 - Greykite, ARIMA

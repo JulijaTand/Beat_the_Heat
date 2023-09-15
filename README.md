@@ -29,8 +29,9 @@ We formulated four hypotheses to guide our research
 - H4: 42.5% of energy consumption in Germany will come from renewable sources by 2030.
 
 ## Tools & Languages 
-- SQL
-- BigQuery
+- SQL,Python
+- BigQuery, Google Sheets
+- Greykite, ARIMA
 
 ## Datasets
 ​
@@ -94,7 +95,8 @@ Identifying key drivers of renewable energy adoption and overall energy consumpt
 ## Predictive Modelling
 
 To predict future trends and assess the feasibility of Germany achieving its 2030 targets, we applied predictive modeling techniques. This involved training various machine learning models such as time-series forecasting and regression analysis.
-We tested different predictive models to determine the best model. We used a combination of Silverkite and ARIMA for the final visualization. 
+We tested different predictive models to determine the best model. We used a combination of Greykite and ARIMA for the 
+final visualization. 
 The models were trained and validated using historical data to make reliable predictions about future energy consumption patterns.
 
 - Energy reduction forecast: https://colab.research.google.com/drive/1ZZugqQRjN3wqO9UfNASmJqxiQ6AwNINH?usp=sharing
